@@ -125,6 +125,7 @@
         , <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // LH ROW4
         , <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // LH ROW5
         , <&gpio1 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // LH ROW6
+        , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // LH ROW7 (EXT1)
         ;
     col-gpios
         = <&gpio1 8 GPIO_ACTIVE_HIGH> // LH COL6
@@ -134,5 +135,6 @@
         , <&gpio1 5 GPIO_ACTIVE_HIGH> // LH COL2
         , <&gpio1 3 GPIO_ACTIVE_HIGH> // LH COL1
         , <&gpio1 1 GPIO_ACTIVE_HIGH> // LH Thumb
+        , <&gpio0 24 GPIO_ACTIVE_HIGH> // LH COL7 (EXT3)
         ;
 };

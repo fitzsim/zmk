@@ -95,7 +95,7 @@
 
 /* For right hand, the columns are offset by 7 */
 &matrix_transform0 {
-    col-offset = <7>;
+    col-offset = <8>;
 };
 
 &kscan0 {
@@ -106,6 +106,7 @@
         , <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RH ROW4
         , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RH ROW5
         , <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RH ROW6
+        , <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // RH ROW7 (EXT1)
         ;
     col-gpios
         = <&gpio1 6 GPIO_ACTIVE_HIGH> // RH Thumb
@@ -115,5 +116,6 @@
         , <&gpio1 5 GPIO_ACTIVE_HIGH> // RH COL4
         , <&gpio1 3 GPIO_ACTIVE_HIGH> // RH COL5
         , <&gpio1 1 GPIO_ACTIVE_HIGH> // RH COL6
+        , <&gpio0 20 GPIO_ACTIVE_HIGH> // RH COL7 (EXT3)
         ;
 };
